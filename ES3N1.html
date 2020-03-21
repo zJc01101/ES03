@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="list1">
+        <d1>广东</d1>
+        <dd>深圳</dd>
+        <dd>广州</dd>
+        <d1>湖南</d1>
+        <dd>长沙</dd>
+        <dd>衡阳</dd>
+    </div>
+    
+    <script>
+        document.getElementById("list1").onclick = function (e) {
+            let t = e.target;
+            if(t.tagName == 'DD') {
+                t.style.color = t.style.color == "" ? "blue" : "";
+            }
+            if(t.tagName == 'D1') {
+                t.style.backgroundColor = t.style.backgroundColor == "" ? "yellow" : "";
+            }
+        }
+
+
+
+
+
+    </script>
+    
+</body>
+</html>
